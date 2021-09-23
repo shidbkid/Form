@@ -16,11 +16,16 @@
 		/* Styling the Form (Color, Padding, Shadow) */
 		form {
 			background-color: #fff;
+            
 			max-width: 75%;
 			margin: 50px auto;
 			padding: 30px 20px;
 			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 		}
+
+        label{
+            font-size:25px;
+        }
 
 		/* Styling form-control Class */
 		.form-control {
@@ -34,6 +39,12 @@
 			margin-bottom: 10px;
 		}
 
+        hr {
+            height: 12px;
+            border: 0;
+            box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+        }
+       
 		/* Styling form-control input,
 		select, textarea */
 		.form-control input,
@@ -53,6 +64,7 @@
 		.form-control input[type="checkbox"] {
 			display: inline-block;
 			width: auto;
+            transform: scale(120%);
 		}
 
 		/* Styling Button */
@@ -100,7 +112,7 @@
     
 	<form id="myForm">
     <div class="form-control">
-		<label>Name</label>
+		<label class="control-label">Name</label>
 		<input name="name" required/>
     </div>
 		<br/>
@@ -133,7 +145,7 @@
             <option value="other">Other</option>
         </select>
     </div>
-    
+    <hr><br>
     <div class="form-control">
         <label>
             Are you part of any other society of AKGEC? 
@@ -152,6 +164,7 @@
         </label>
         
     </div>
+    <hr><br>
     
     <div class="form-control">
         <label for="comment">
@@ -163,46 +176,59 @@
             placeholder="Enter your society's name">
         </textarea>
     </div>
+    <hr><br>
     
     <div class="form-control">
         <label>Check if you possess one or more of the following skills/ you are interested in any of them
             <small>(Check all that apply)</small>
         </label>
+        <br>
         <!-- Input Type Checkbox -->
         <label for="inp-1">
             <input type="checkbox"
-                name="inp1">Web development</input></label>
+                name="inp1">Web development</label>
+                <br>
         <label for="inp-2">
             <input type="checkbox"
-                name="inp2">Graphic Design ( proficient in Photoshop or Illustration or any other relevant software) </input></label>
+                name="inp2">Graphic Design ( proficient in Photoshop or Illustration or any other relevant software) </label>
+                <br>
         <label for="inp-3">
             <input type="checkbox"
-                name="inp3">Content Writing</input></label>
+                name="inp3">Content Writing</label>
+                <br>
         <label for="inp-4">
             <input type="checkbox"
-                name="inp4">Public speaking</input></label>
+                name="inp4">Public speaking</label>
+                <br>
         <label for="inp-5">
             <input type="checkbox"
-                name="inp5">Video editing</input></label>
+                name="inp5">Video editing</label>
+                <br>
         <label for="inp-6">
             <input type="checkbox"
-                name="inp6">Digital Marketing</input></label>
+                name="inp6">Digital Marketing</label>
+                <br>
         <label for="inp-7">
             <input type="checkbox"
-                name="inp7">Photography</input></label>
+                name="inp7">Photography</label>
+                <br>
         <label for="inp-8">
             <input type="checkbox"
-                name="inp8">Promotions(Events)</input></label>
+                name="inp8">Promotions(Events)</label>
+                <br>
         <label for="inp-9">
             <input type="checkbox"
-                name="inp9">Other:</input></label>
+                name="inp9">Other:</label>
+                <br>
         <label for="inp-10">
             <input type="text"
             id="other"
             placeholder="Please Specify" name="inp10" />
             </label>
-        
+            
+            <br> <hr> 
     </div>
+   
     
     
     
@@ -212,51 +238,70 @@
              it there)
             <small>(Check all that apply)</small>
         </label>
+        <br>
         <!-- Input Type Checkbox -->
         <label for="inp-1">
             <input type="checkbox"
-                   name="C/C++">C/C++</input></label>
+                   name="C/C++">C/C++</label>
+
+                   <br>
         <label for="inp-2">
             <input type="checkbox"
-                   name="Java">Java</input></label>
+                   name="Java">Java</label>
+                   <br>
         <label for="inp-3">
             <input type="checkbox"
-                   name="Python">Python</input></label>
+                   name="Python">Python</label>
+                   <br>
         <label for="inp-4">
             <input type="checkbox"
-                   name="HTML">HTML</input></label>
+                   name="HTML">HTML</label>
+                   <br>
         <label for="inp-5">
             <input type="checkbox"
-                   name="Adobe_PhotoShop">Adobe Photoshop</input></label>
+                   name="Adobe_PhotoShop">Adobe Photoshop</label>
+                   <br>
         <label for="inp-6">
             <input type="checkbox"
-                   name="Adobe_Lightroom">Adobe Lightroom</input></label>
+                   name="Adobe_Lightroom">Adobe Lightroom</label>
+                   <br>
         <label for="inp-7">
             <input type="checkbox"
-                   name="Adobe_Premiere">Adobe Premiere</input></label>
+                   name="Adobe_Premiere">Adobe Premiere</label>
+                   <br>
         <label for="inp-8">
             <input type="checkbox"
-                   name="Sony_Vegas">Sony Vegas</input></label>
+                   name="Sony_Vegas">Sony Vegas</label>
+                   <br>
         <label for="inp-9">
             <input type="checkbox"
-                   name="Final_Cut_Pro">Final Cut Pro</input></label>
+                   name="Final_Cut_Pro">Final Cut Pro</label>
+                   <br>
         <label for="inp-10">
             <input type="checkbox"
-                   name="MS_Office">MS Office</input></label>
+                   name="MS_Office">MS Office</label>
+                   <br>
         <label for="inp-11">
-            <input type="checkbox" name="Corel_Draw">Corel Draw</input></label>
+            <input type="checkbox" name="Corel_Draw">Corel Draw</label>
+                   <br>
         <label for="inp-12">
-            <input type="checkbox" name="Adobe_Illustrator">Adobe Illustrator</input></label>
+            <input type="checkbox" name="Adobe_Illustrator">Adobe Illustrator</label>
+                   <br>
         <label for="inp-13">
-            <input type="checkbox" name="Oracle_forms_and_DB">Oracle forms and DB</input></label>
+            <input type="checkbox" name="Oracle_forms_and_DB">Oracle forms and DB</label>
+                   <br>
         <label for="inp-14">
-            <input type="checkbox" name="Django">Django</input></label>
+            <input type="checkbox" name="Django">Django</label>
+            <br>
         <label for="inp-15">
-            <input type="checkbox" name="Aftereffects">Aftereffects</input></label>
+            <input type="checkbox" name="Aftereffects">Aftereffects</label>
+            <br>
         <label for="inp-16">
-            <input type="checkbox" name="inp">Other:</input></label>
+            <input type="checkbox" name="inp">Other:</label>
+            <br>
         <label for="inp-17">
             <input type="text" id="other"placeholder="Please Specify" name="other_skills" /></label>
+            <br> <hr>
     </div>
     
     
@@ -271,8 +316,9 @@
             placeholder="Your Answers....">
         </textarea>
     </div>
+    <hr><br>
     
-    
+
     <div class="form-control">
         <label for="Entrepreneurship_mean">
            What does Entrepreneurship mean to you?(Max 50 words)
@@ -283,7 +329,7 @@
             placeholder="Your Answers....">
         </textarea>
     </div>
-    
+    <hr><br>
     
     <div class="form-control">
         <label for="we_choose_you">
@@ -294,6 +340,7 @@
             placeholder="Your Answers....">
         </textarea>
     </div>
+    <hr><br>
     
     
     
@@ -352,7 +399,7 @@
 		function updateTimer()
 		{
 			msLeft = endTime - (+new Date);
-			if ( msLeft < 10 ) {
+			if ( msLeft < 1000 ) {
 		    document.getElementById('submit').click();
             element.innerHTML = "Time is up!";
 			} else {
@@ -366,7 +413,7 @@
 
 	
 		element = document.getElementById( elementName );
-		endTime = (+new Date) + 10* (60*minutes + seconds) + 500;
+		endTime = (+new Date) + 1000* (60*minutes + seconds) + 500;
 		updateTimer();
 
 		
